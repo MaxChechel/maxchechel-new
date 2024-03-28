@@ -1,9 +1,14 @@
 {
-  "name": "template",
+  "name": "MaxChechel New",
   "version": "1.0.0",
   "description": "",
+  "targets": {
+    "main": {
+      "optimize": true
+    }
+  },
   "scripts": {
-    "build": "parcel build 'src/**/*.js' 'src/index.html' --public-url ./",
+    "build": "NODE_ENV=production parcel build 'src/**/*.js' 'src/index.html' -d 'dist/'",
     "dev": "parcel 'src/**/*.js' 'src/index.html' --open"
   },
   "keywords": [],
@@ -11,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "gsap": "npm:@gsap/shockingly@^3.12.5",
-    "parcel": "latest"
+    "parcel-bundler": "^1.12.5",
+    "swiper": "^11.0.7"
   }
 }
