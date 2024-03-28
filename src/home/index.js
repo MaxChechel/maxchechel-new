@@ -61,16 +61,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         gsap.set("h1, .home_hero-subtext", { opacity: 1 });
 
-        gsap.set(".navbar_logo-link, .navbar_link", {
-          autoAlpha: 0,
-          y: "-100%",
-          rotationX: 5,
-        });
+        gsap.set(
+          ".navbar_logo-link, .navbar_link, .heading-style-h6, .services_item-text, .availability_text",
+          {
+            autoAlpha: 0,
+            y: "-100%",
+            rotationX: 5,
+          }
+        );
 
         //Initialize swiper slider
         const swiper = new Swiper(".swiper", {
           slidesPerView: 1,
-          spaceBetween: 30,
+          spaceBetween: 0,
+          loop: true,
         });
 
         //Slides initial position
@@ -87,14 +91,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         heroTl
           .to("h1 .word", {
-            delay: 0.4,
+            delay: 0.3,
             y: "0%",
             autoAlpha: 1,
             filter: "blur(0px)",
             transformOrigin: "left top",
             rotationX: 0,
             duration: 0.8,
-            stagger: { each: 0.075 },
+            stagger: { each: 0.05 },
             ease: "expo.out",
           })
           .to(
@@ -108,6 +112,52 @@ document.addEventListener("DOMContentLoaded", () => {
               duration: 0.5,
               stagger: { each: 0.025 },
             },
+            "<30%"
+          )
+          .to(
+            ".home_services-wrapper .heading-style-h6",
+            {
+              y: "0%",
+              autoAlpha: 1,
+              filter: "blur(0px)",
+              transformOrigin: "left top",
+              rotationX: 0,
+              duration: 0.5,
+            },
+            "<20%"
+          )
+          .to(
+            ".services_item-text",
+            {
+              y: "0%",
+              autoAlpha: 1,
+              filter: "blur(0px)",
+              transformOrigin: "left top",
+              rotationX: 0,
+              duration: 0.5,
+              stagger: { each: 0.025 },
+            },
+            "<20%"
+          )
+          .to(
+            ".availability_text",
+            {
+              y: "0%",
+              autoAlpha: 1,
+              filter: "blur(0px)",
+              transformOrigin: "left top",
+              rotationX: 0,
+              duration: 0.5,
+            },
+            "<30%"
+          )
+          .to(
+            ".availability_icon-wrap",
+            {
+              opacity: 1,
+              scale: 1,
+              duration: 0.5,
+            },
             "<50%"
           )
           .to(
@@ -119,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
               ease: "expo.out",
               stagger: { each: 0.1 },
             },
-            "<35%"
+            "<20%"
           )
           .to(
             ".navbar_component",
@@ -128,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
               duration: 0.6,
               ease: "power4.out",
             },
-            "<15%"
+            "<0%"
           )
           .to(
             ".navbar_logo-link, .navbar_link",
@@ -141,7 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
               stagger: { each: 0.05 },
               ease: "power4.out",
             },
-            "<50%"
+            "<30%"
           );
 
         heroTl.play();
