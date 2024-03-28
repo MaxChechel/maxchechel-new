@@ -3,11 +3,10 @@ import { Flip } from "gsap/all";
 import ScrambleTextPlugin from "gsap/dist/ScrambleTextPlugin";
 import SplitType from "split-type";
 import Swiper from "swiper";
-import wrapLines from "./src/utils/wrapLines";
-import listHover from "./src/utils/listHover";
-import navLinksHadler from "./src/utils/navLinksHandler";
-import scramble from "./src/utils/scrambleText";
-
+import wrapLines from "../utils/utils";
+import listHover from "../utils/listHover";
+import navLinksHadler from "../utils/navLinksHandler";
+import scramble from "../utils/scrambleText";
 gsap.registerPlugin(Flip, ScrambleTextPlugin);
 let mm = gsap.matchMedia();
 document.addEventListener("DOMContentLoaded", () => {

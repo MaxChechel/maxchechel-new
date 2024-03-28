@@ -17,6 +17,7 @@
   "dependencies": {
     "gsap": "npm:@gsap/shockingly@^3.12.5",
     "parcel-bundler": "^1.12.5",
+    "split-type": "^0.3.4",
     "swiper": "^11.0.7"
   }
 }
