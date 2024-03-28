@@ -9,6 +9,7 @@ import navLinksHadler from "../utils/navLinksHandler";
 import scramble from "../utils/scrambleText";
 gsap.registerPlugin(Flip, ScrambleTextPlugin);
 let mm = gsap.matchMedia();
+
 document.addEventListener("DOMContentLoaded", () => {
   //Hovers
   mm.add("(hover:hover)", () => {
