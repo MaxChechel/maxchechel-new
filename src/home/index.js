@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         //Initialize swiper slider
         const swiper = new Swiper(".swiper", {
-          slidesPerView: "auto",
+          slidesPerView: 1,
           spaceBetween: 30,
         });
 
