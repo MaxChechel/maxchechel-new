@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       link.addEventListener("mouseover", () => {
         setTimeout(() => {
-          scramble(textItem, "Send message");
+          scramble(textItem, "Let's talk about your project");
         }, 150);
       });
       link.addEventListener("mouseleave", () => {
