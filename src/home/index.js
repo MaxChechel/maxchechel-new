@@ -75,6 +75,10 @@ document.addEventListener("DOMContentLoaded", () => {
           slidesPerView: 1,
           spaceBetween: 0,
           loop: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
         });
 
         //Slides initial position
