@@ -30037,7 +30037,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var text = textItem.textContent;
       link.addEventListener("mouseover", function () {
         setTimeout(function () {
-          (0, _scrambleText.default)(textItem, "Let's talk about your project");
+          (0, _scrambleText.default)(textItem, "Let's talk about your project!");
         }, 150);
       });
       link.addEventListener("mouseleave", function () {
