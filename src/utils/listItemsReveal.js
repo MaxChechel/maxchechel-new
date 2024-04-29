@@ -6,7 +6,7 @@ export function listItemsReveal(targetEl) {
   blogSectionListItems.forEach((item, index) => {
     const divider = item.querySelector(".blog-list_divider");
     const heading = item.querySelector(".blog-list_question h3");
-    //const category = item.querySelectorAll(".blog-list_category-wrap p");
+    const category = item.querySelectorAll(".blog-list_category-wrap p");
 
     gsap.set(divider, {
       width: "0%",
@@ -34,18 +34,18 @@ export function listItemsReveal(targetEl) {
       )
       .call(() => {
         item.closest(".blog-list_items-wrap").classList.add("is-ready");
-      });
-    // .to(
-    //   category,
-    //   {
-    //     y: "0%",
-    //     opacity: 1,
-    //     duration: 0.5,
-    //     stagger: {
-    //       each: 0.05,
-    //     },
-    //   },
-    //   ".5"
-    // );
+      })
+      .to(
+        category,
+        {
+          y: "0%",
+          opacity: 1,
+          duration: 0.5,
+          stagger: {
+            each: 0.05,
+          },
+        },
+        ".5"
+      );
   });
 }
