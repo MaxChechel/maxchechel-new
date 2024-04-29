@@ -40,9 +40,10 @@ export function listItemsReveal(targetEl) {
         {
           y: "0%",
           opacity: 1,
-          duration: 0.5,
+          duration: 0.4,
+          ease: "power4.inOut",
           stagger: {
-            each: 0.05,
+            each: 0.025,
           },
         },
         ".5"
