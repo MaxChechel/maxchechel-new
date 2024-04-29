@@ -12,7 +12,7 @@ export function listItemsReveal(targetEl) {
       width: "0%",
       opacity: 0,
     });
-    gsap.set(heading, {
+    gsap.set([heading, category], {
       y: "-100%",
       opacity: 0,
     });
