@@ -12,10 +12,16 @@ export function listItemsReveal(targetEl) {
       width: "0%",
       opacity: 0,
     });
-    gsap.set([heading, category], {
+    gsap.set(heading, {
       y: "-100%",
       opacity: 0,
     });
+    if (category) {
+      gsap.set(category, {
+        y: "-100%",
+        opacity: 0,
+      });
+    }
     const tl = gsap.timeline({ delay: index * 0.075 });
     tl.to(divider, {
       width: "100%",
