@@ -6,7 +6,7 @@ export function listItemsReveal(targetEl) {
   blogSectionListItems.forEach((item, index) => {
     const divider = item.querySelector(".blog-list_divider");
     const heading = item.querySelector(".blog-list_question h3");
-    const category = item?.querySelectorAll(".blog-list_category-wrap p");
+    const category = item.querySelectorAll(".blog-list_category-wrap p");
 
     gsap.set(divider, {
       width: "0%",
