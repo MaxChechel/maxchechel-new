@@ -52,7 +52,7 @@ export function listItemsReveal(targetEl) {
             each: 0.015,
           },
         },
-        ".5"
+        ".2"
       );
   });
 }
