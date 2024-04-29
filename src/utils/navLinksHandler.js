@@ -136,7 +136,7 @@ export default function navLinksHadler() {
                 ".blog-list_question h3, .blog-list_category-wrap p",
                 {
                   opacity: 0,
-                  stagger: { each: 0.05, start: "end" },
+                  stagger: { each: 0.05, start: "start" },
                 },
                 0.2
               )
